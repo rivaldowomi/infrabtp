@@ -132,68 +132,84 @@ Réservez votre place à la conférence Infra-BTP & Standards. Rejoignez les lea
 
 <!-- Section 3: Participation Options -->
 <div class="p-6 sm:p-10 bg-background-light/50 dark:bg-background-dark/30">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-primary">event_available</span>
-<h3 class="text-[#181112] dark:text-white text-xl font-bold leading-tight">Options de participation</h3>
-</div>
-<div class="flex flex-col gap-4">
-<label class="relative flex items-start p-4 cursor-pointer rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] hover:border-primary/50 transition-all shadow-sm">
-<div class="flex items-center h-6">
-<input checked="" class="size-5 rounded border-gray-300 text-primary focus:ring-primary" type="checkbox"/>
-</div>
-<div class="ml-3 text-sm leading-6">
-<p class="font-bold text-[#181112] dark:text-white text-base">Participation à la conférence principale</p>
-<p class="text-[#896165] dark:text-gray-400">Accès à toutes les conférences, panels et événements de réseautage.</p>
-</div>
-</label>
-<label class="relative flex items-start p-4 cursor-pointer rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] hover:border-primary/50 transition-all shadow-sm group">
-<div class="flex items-center h-6">
-<input class="size-5 rounded border-gray-300 text-primary focus:ring-primary" id="workshop-check" type="checkbox"/>
-</div>
-<div class="ml-3 text-sm leading-6">
-<p class="font-bold text-[#181112] dark:text-white text-base">Participation à l’atelier de normalisation</p>
-<p class="text-[#896165] dark:text-gray-400">Rejoignez les groupes de travail techniques. Places limitées.</p>
-</div>
-</label>
-</div>
+  <div class="flex items-center gap-3 mb-6">
+    <span class="material-symbols-outlined text-primary">event_available</span>
+    <h3 class="text-[#181112] dark:text-white text-xl font-bold leading-tight">Options de participation</h3>
+  </div>
+  <div class="flex flex-col gap-4">
+    <label class="relative flex items-start p-4 cursor-pointer rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] hover:border-primary/50 transition-all shadow-sm">
+      <div class="flex items-center h-6">
+        <input name="conference_participation" checked="" class="size-5 rounded border-gray-300 text-primary" type="checkbox" />
+      </div>
+      <div class="ml-3 text-sm leading-6">
+        <p class="font-bold text-[#181112] dark:text-white text-base">Participation à la conférence principale</p>
+        <p class="text-[#896165] dark:text-gray-400">Accès à toutes les conférences, panels et événements de réseautage.</p>
+      </div>
+    </label>
+
+    <label class="relative flex items-start p-4 cursor-pointer rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] hover:border-primary/50 transition-all shadow-sm group">
+      <div class="flex items-center h-6">
+        <input name="workshop_participation" class="size-5 rounded border-gray-300 text-primary" id="workshop-check" type="checkbox"/>
+      </div>
+      <div class="ml-3 text-sm leading-6">
+        <p class="font-bold text-[#181112] dark:text-white text-base">Participation à l’atelier de normalisation</p>
+        <p class="text-[#896165] dark:text-gray-400">Rejoignez les groupes de travail techniques. Places limitées.</p>
+      </div>
+    </label>
+  </div>
 </div>
 
 <!-- Section 4: Workshop Details -->
-<div class="p-6 sm:p-10 border-t border-[#f4f0f0] dark:border-[#3a2e30] bg-[#fcf8f8] dark:bg-[#25181a]">
-<div class="flex items-center gap-2 mb-4">
-<span class="material-symbols-outlined text-primary text-sm">info</span>
-<h4 class="text-[#181112] dark:text-white text-sm font-bold uppercase tracking-wider opacity-80">Détails participants atelier</h4>
+<div id="workshop-details" class="p-6 sm:p-10 border-t border-[#f4f0f0] dark:border-[#3a2e30] bg-[#fcf8f8] dark:bg-[#25181a]" style="display: none;">
+  <div class="flex items-center gap-2 mb-4">
+    <span class="material-symbols-outlined text-primary text-sm">info</span>
+    <h4 class="text-[#181112] dark:text-white text-sm font-bold uppercase tracking-wider opacity-80">Détails participants atelier</h4>
+  </div>
+  <p class="text-sm text-[#896165] dark:text-gray-400 mb-6">Si vous avez sélectionné l’atelier de normalisation, veuillez compléter les champs suivants pour nous aider à organiser les sessions.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+    <label class="flex flex-col w-full">
+      <p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Domaine d’expertise</p>
+      <select name="workshop_expertise" class="form-select flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 text-base transition-all">
+        <option disabled selected value="">Sélectionnez votre domaine</option>
+        <option>Génie structurel</option>
+        <option>Génie géotechnique</option>
+        <option>Science des matériaux</option>
+        <option>Urbanisme et réglementations</option>
+        <option>Durabilité & Bâtiments verts</option>
+        <option>Autre</option>
+      </select>
+    </label>
+    <label class="flex flex-col w-full">
+      <p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Années d’expérience</p>
+      <select name="workshop_experience" class="form-select flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 text-base transition-all">
+        <option disabled selected value="">Sélectionnez la durée</option>
+        <option>0-2 ans</option>
+        <option>3-5 ans</option>
+        <option>5-10 ans</option>
+        <option>10+ ans</option>
+      </select>
+    </label>
+  </div>
+  <label class="flex flex-col w-full">
+    <p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Proposez un sujet (facultatif)</p>
+    <textarea name="workshop_topic" class="form-textarea flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary min-h-[100px] p-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all resize-y" placeholder="Décrivez brièvement un thème ou une norme que vous souhaitez discuter..."></textarea>
+  </label>
 </div>
-<p class="text-sm text-[#896165] dark:text-gray-400 mb-6">Si vous avez sélectionné l’atelier de normalisation, veuillez compléter les champs suivants pour nous aider à organiser les sessions.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-<label class="flex flex-col w-full">
-<p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Domaine d’expertise</p>
-<select class="form-select flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 text-base transition-all">
-<option disabled="" selected="" value="">Sélectionnez votre domaine</option>
-<option>Génie structurel</option>
-<option>Génie géotechnique</option>
-<option>Science des matériaux</option>
-<option>Urbanisme et réglementations</option>
-<option>Durabilité & Bâtiments verts</option>
-<option>Autre</option>
-</select>
-</label>
-<label class="flex flex-col w-full">
-<p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Années d’expérience</p>
-<select class="form-select flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 text-base transition-all">
-<option disabled="" selected="" value="">Sélectionnez la durée</option>
-<option>0-2 ans</option>
-<option>3-5 ans</option>
-<option>5-10 ans</option>
-<option>10+ ans</option>
-</select>
-</label>
-</div>
-<label class="flex flex-col w-full">
-<p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Proposez un sujet (facultatif)</p>
-<textarea class="form-textarea flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary min-h-[100px] p-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all resize-y" placeholder="Décrivez brièvement un thème ou une norme que vous souhaitez discuter..."></textarea>
-</label>
-</div>
+
+<!-- Script pour afficher/cacher les détails -->
+<script>
+  const workshopCheckbox = document.getElementById('workshop-check');
+  const workshopDetails = document.getElementById('workshop-details');
+
+  workshopCheckbox.addEventListener('change', () => {
+    if(workshopCheckbox.checked) {
+      workshopDetails.style.display = 'block';
+    } else {
+      workshopDetails.style.display = 'none';
+    }
+  });
+</script>
+
 
 <!-- Submit Action -->
 <div class="p-6 sm:p-10 bg-white dark:bg-[#1a0f10] border-t border-[#f4f0f0] dark:border-[#3a2e30] flex flex-col sm:flex-row items-center justify-between gap-6">
