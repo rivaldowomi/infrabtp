@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Programmes</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#d41121",
+              "primary-dark": "#b90e1c",
+              "background-light": "#f8f6f6",
+              "background-dark": "#221012",
+              "concrete": "#f0f2f5",
+              "steel": "#4a5568",
+              "beige-light": "#f9f7f2",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#181112] antialiased">
+<div class="flex min-h-screen flex-col">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-[#e5e7eb] bg-white shadow-sm">
+<div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+<div class="flex items-center gap-4">
+<div class="flex size-10 items-center justify-center rounded-lg bg-primary overflow-hidden">
+    <img src="assets/logo.jpg"
+         alt="Logo"
+         class="h-full w-full object-cover">
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-tight text-[#181112]">Infra-BTP & Normes Conf</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-gray-600 hover:text-primary transition-colors" href="index.html">Accueil</a>
+<a class="text-sm font-bold text-primary" href="program.html">Programme</a>
+<a class="text-sm font-medium text-gray-600 hover:text-primary transition-colors" href="register.html">Inscription</a>
+<a class="text-sm font-medium text-gray-600 hover:text-primary transition-colors" href="gallery.html">Galerie</a>
+<a class="text-sm font-medium text-gray-600 hover:text-primary transition-colors" href="partener.html">Partenaires</a>
+<a class="text-sm font-medium text-gray-600 hover:text-primary transition-colors" href="about.html">À propos</a>
+<a class="text-sm font-medium text-gray-600 hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex h-9 items-center justify-center rounded bg-primary px-4 text-sm font-bold text-white transition hover:bg-primary-dark">
+                        S’inscrire maintenant
+                    </button>
+<button class="md:hidden p-2 text-gray-600">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="bg-white pt-12 pb-8 px-4 sm:px-6 lg:px-8 border-b border-gray-100">
+<div class="mx-auto max-w-5xl">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-primary font-semibold text-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-lg">calendar_month</span>
+<span>20 janvier — 6 février 2026</span>
+</div>
+<h1 class="text-4xl sm:text-5xl font-black text-[#181112] tracking-tight">Programme de la conférence</h1>
+<p class="max-w-2xl text-lg text-gray-600">
+                            Un programme complet pour la Conférence Infra-BTP &amp; Normes 2026, conçu pour favoriser la collaboration depuis les réunions préparatoires jusqu’aux ateliers techniques.
+                        </p>
+</div>
+<!-- Chips/Filters -->
+<div class="mt-8 flex flex-wrap gap-3">
+<button class="flex h-9 items-center gap-2 rounded-full bg-primary px-4 text-sm font-medium text-white shadow-sm ring-1 ring-primary transition hover:bg-primary-dark">
+<span class="material-symbols-outlined text-[18px]">view_list</span>
+                            Toutes les sessions
+                        </button>
+<button class="flex h-9 items-center gap-2 rounded-full bg-white px-4 text-sm font-medium text-gray-700 shadow-sm ring-1 ring-gray-300 transition hover:bg-gray-50 hover:text-primary hover:ring-primary">
+<span class="material-symbols-outlined text-[18px]">meeting_room</span>
+                            Préparatoire
+                        </button>
+<button class="flex h-9 items-center gap-2 rounded-full bg-white px-4 text-sm font-medium text-gray-700 shadow-sm ring-1 ring-gray-300 transition hover:bg-gray-50 hover:text-primary hover:ring-primary">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+                            Conférence principale
+                        </button>
+<button class="flex h-9 items-center gap-2 rounded-full bg-white px-4 text-sm font-medium text-gray-700 shadow-sm ring-1 ring-gray-300 transition hover:bg-gray-50 hover:text-primary hover:ring-primary">
+<span class="material-symbols-outlined text-[18px]">engineering</span>
+                            Ateliers
+                        </button>
+</div>
+</div>
+</section>
+<!-- Phase 1 -->
+<section class="py-12 px-4 sm:px-6 lg:px-8 bg-white">
+<div class="mx-auto max-w-5xl">
+<div class="mb-8 border-l-4 border-primary pl-4">
+<h2 class="text-2xl font-bold text-[#181112]">Phase 1 : Réunion préparatoire</h2>
+<div class="mt-1 flex items-center gap-2 text-sm font-medium text-gray-500">
+<span class="inline-flex items-center rounded bg-red-50 px-2 py-1 text-xs font-semibold text-red-700 ring-1 ring-inset ring-red-600/10">Accès restreint</span>
+<span>•</span>
+<span>Réservé aux membres du comité</span>
+</div>
+</div>
+<div class="relative border-l border-gray-200 ml-4 space-y-8 pb-8">
+<!-- Timeline Item -->
+<div class="relative pl-8 sm:pl-12">
+<div class="absolute -left-3 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white ring-4 ring-gray-50">
+<div class="h-2.5 w-2.5 rounded-full bg-primary"></div>
+</div>
+<div class="rounded-lg border border-gray-200 bg-white p-5 shadow-sm transition hover:border-primary hover:shadow-md">
+<div class="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+<span class="text-sm font-bold text-primary">20 janv. 2026 • 09:00 - 12:00</span>
+<span class="text-xs font-medium text-gray-400 flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span>  Salle A</span>
+</div>
+<h3 class="text-lg font-bold text-[#181112]">Réunion de coordination du comité</h3>
+<p class="mt-2 text-sm text-gray-600">Révision de l’agenda final, confirmation de la logistique des intervenants et alignement institutionnel pour l’événement principal.</p>
+<div class="mt-4 flex items-center gap-3">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-gray-300 bg-cover bg-center" data-alt="Portrait of a committee member" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxl03kFiMY5L5mpOdaP2b1NiJuYjcSAJ2v3iJJNxRXPd3LVi8qMtHAlW1yTZf9YykeNTw9553ihlm_13zb9AVnrXzdN67xjFMfBJRJMD3YUzR2fNSHcfFT3WWWhzy5QCaNbOR2gf7IkOmz6eEE2Fw2dI3iPM7WRoyisBJBdBJbMFrW2YZHxaqm5pAjLH4STBzrWTrMPeL_NgRmcnUqZk_rYI3l6VwX5xuXRU3XD6EdgyXXEKDdhqGdxXOovmklCYA5sczyJAERuPE');"></div>
+<div class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-gray-300 bg-cover bg-center" data-alt="Portrait of a committee member" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4Ozv5aiYUaPHFhanD_wkN9YBV5_fPmWyYc-NaNE-g2DhQ0lugvJWKp622EDusr0O5vGdj2wiyFOhcviYFfCQCaTfh0IbRVcvfcFvD0OvUzWklYbAjU3BSKCj_YZQr4UdhlWq58tHUXkdBoyonQK9Bq_aBK5sKnsk8OqVlrezmyS21ZDR8cUFx3GoICPT9AQHmyxVoF3eDeFk8Jq6a_iBxt_I_aXvEm0j1r2uoPbCzU2AuIMaA6LVa2uLNpMbLUO2EYxlCTv24R9g');"></div>
+</div>
+<span class="text-xs font-medium text-gray-500">Hôte : Dr. Sarah Jenkins</span>
+</div>
+</div>
+</div>
+<!-- Timeline Item -->
+<div class="relative pl-8 sm:pl-12">
+<div class="absolute -left-3 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white ring-4 ring-gray-50">
+<div class="h-2.5 w-2.5 rounded-full bg-gray-300"></div>
+</div>
+<div class="rounded-lg border border-gray-200 bg-white p-5 shadow-sm transition hover:border-primary hover:shadow-md">
+<div class="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+<span class="text-sm font-bold text-gray-600">20 janv. 2026 • 13:30 - 17:00</span>
+<span class="text-xs font-medium text-gray-400 flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span>  Salle B</span>
+</div>
+<h3 class="text-lg font-bold text-[#181112]">Session de planification institutionnelle</h3>
+<p class="mt-2 text-sm text-gray-600">Alignement stratégique avec les institutions partenaires et sponsors concernant l’annonce de la feuille de route 2027.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Phase 2 -->
+<section class="py-12 px-4 sm:px-6 lg:px-8 bg-concrete">
+<div class="mx-auto max-w-5xl">
+<div class="mb-8 border-l-4 border-steel pl-4">
+<h2 class="text-2xl font-bold text-[#181112]">Phase 2 : Conférence principale</h2>
+<div class="mt-1 flex items-center gap-2 text-sm font-medium text-gray-500">
+<span class="inline-flex items-center rounded bg-green-50 px-2 py-1 text-xs font-semibold text-green-700 ring-1 ring-inset ring-green-600/20">Ouvert au public</span>
+<span>•</span>
+<span>Auditorium principal</span>
+</div>
+</div>
+<div class="grid gap-8 lg:grid-cols-[200px_1fr]">
+<!-- Day 1 Header -->
+<div class="lg:text-right">
+<div class="sticky top-24">
+<span class="block text-3xl font-black text-gray-300">JOUR 01</span>
+<span class="block text-lg font-bold text-primary">28 janv.</span>
+<span class="block text-sm font-medium text-gray-500 mt-1">Ouverture & Discours principaux</span>
+</div>
+</div>
+<!-- Day 1 Content -->
+<div class="space-y-4">
+<!-- Slot 1 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-l-4 hover:border-l-primary hover:shadow-md">
+<div class="flex items-center gap-3 text-sm text-gray-500">
+<span class="flex items-center gap-1 font-mono font-bold text-primary"><span class="material-symbols-outlined text-[18px]">schedule</span> 09:00 - 10:30</span>
+<span class="h-1 w-1 rounded-full bg-gray-300"></span>
+<span>Cérémonie d’ouverture</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-[#181112] group-hover:text-primary">Discours de bienvenue & État du secteur</h4>
+<p class="mt-2 text-sm text-gray-600">Ouverture officielle par le Ministère des Infrastructures suivie d’un discours sur le "Futur des normes de construction 2030".</p>
+</div>
+</div>
+<!-- Slot 2 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-gray-200 bg-beige-light p-4 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3 text-sm text-gray-500">
+<span class="flex items-center gap-1 font-mono font-bold text-gray-600"><span class="material-symbols-outlined text-[18px]">local_cafe</span> 10:30 - 11:00</span>
+<span>Pause réseautage</span>
+</div>
+<span class="text-xs bg-orange-100 text-orange-800 px-2 py-0.5 rounded">Foyer</span>
+</div>
+</div>
+<!-- Slot 3 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-l-4 hover:border-l-primary hover:shadow-md">
+<div class="flex items-center gap-3 text-sm text-gray-500">
+<span class="flex items-center gap-1 font-mono font-bold text-primary"><span class="material-symbols-outlined text-[18px]">schedule</span> 11:00 - 12:30</span>
+<span class="h-1 w-1 rounded-full bg-gray-300"></span>
+<span>Table ronde principale</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-[#181112] group-hover:text-primary">Matériaux durables pour les grandes infrastructures</h4>
+<p class="mt-2 text-sm text-gray-600">Les experts discutent de l’intégration du béton recyclé et de l’acier à faible empreinte carbone dans la construction de ponts.</p>
+</div>
+<div class="flex items-center gap-4 border-t border-gray-100 pt-4 mt-2">
+<div class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full bg-gray-200 bg-cover bg-center" data-alt="Speaker portrait" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2RvUben4xtVZjgFqeK2KIYLNHYNOKaAU7nUI5xwg6GHz40CPsr2mQbfTBpM7CFtrUF6NfOSFnhNfRT0pdYLgYVuB4D2pWD87JVEkjplcodrLSAFtrIsicNiyxF0FkB__tM6nMza8MVnc_8sMsgc5KsKc3yu2l_-IwMR8wlCa068ufV_MsC_AUiormN958gFZk64yq1ea7JlVMQG5MApSukGrBWaUXwoc9L--qF_SNtGiz7c1boXySqUot_r1dJIY7HOzsR156WIU');"></div>
+<div class="text-xs">
+<p class="font-bold text-[#181112]">Marc Dubois</p>
+<p class="text-gray-500">Ingénieur principal, BuildCorp</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Day 2 Header -->
+<div class="lg:text-right mt-8 lg:mt-0 pt-8 lg:pt-0 lg:border-t-0 border-t border-gray-200">
+<div class="sticky top-24">
+<span class="block text-3xl font-black text-gray-300">JOUR 02</span>
+<span class="block text-lg font-bold text-primary">29 janv.</span>
+<span class="block text-sm font-medium text-gray-500 mt-1">Tables rondes techniques</span>
+</div>
+</div>
+<!-- Day 2 Content -->
+<div class="space-y-4">
+<!-- Slot 1 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-l-4 hover:border-l-primary hover:shadow-md">
+<div class="flex items-center gap-3 text-sm text-gray-500">
+<span class="flex items-center gap-1 font-mono font-bold text-primary"><span class="material-symbols-outlined text-[18px]">schedule</span> 09:30 - 12:30</span>
+<span class="h-1 w-1 rounded-full bg-gray-300"></span>
+<span>Approfondissement</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-[#181112] group-hover:text-primary">Nouvelles normes BTP : Mises à jour Eurocode</h4>
+<p class="mt-2 text-sm text-gray-600">Analyse technique des prochaines modifications de l’Eurocode 2 concernant les structures en béton armé.</p>
+</div>
+</div>
+<!-- Slot 2 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-l-4 hover:border-l-primary hover:shadow-md">
+<div class="flex items-center gap-3 text-sm text-gray-500">
+<span class="flex items-center gap-1 font-mono font-bold text-primary"><span class="material-symbols-outlined text-[18px]">schedule</span> 14:00 - 16:30</span>
+<span class="h-1 w-1 rounded-full bg-gray-300"></span>
+<span>Étude de cas</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-[#181112] group-hover:text-primary">Défis du tunneling urbain</h4>
+<p class="mt-2 text-sm text-gray-600">Retours d’expérience du projet Grand Paris Express.</p>
+</div>
+</div>
+</div>
+<!-- Day 3 Header -->
+<div class="lg:text-right mt-8 lg:mt-0 pt-8 lg:pt-0 lg:border-t-0 border-t border-gray-200">
+<div class="sticky top-24">
+<span class="block text-3xl font-black text-gray-300">JOUR 03</span>
+<span class="block text-lg font-bold text-primary">30 janv.</span>
+<span class="block text-sm font-medium text-gray-500 mt-1">Conclusions</span>
+</div>
+</div>
+<!-- Day 3 Content -->
+<div class="space-y-4">
+<!-- Slot 1 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-l-4 hover:border-l-primary hover:shadow-md">
+<div class="flex items-center gap-3 text-sm text-gray-500">
+<span class="flex items-center gap-1 font-mono font-bold text-primary"><span class="material-symbols-outlined text-[18px]">schedule</span> 10:00 - 12:00</span>
+<span class="h-1 w-1 rounded-full bg-gray-300"></span>
+<span>Plénière de clôture</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-[#181112] group-hover:text-primary">Feuille de route 2030 & Remarques finales</h4>
+<p class="mt-2 text-sm text-gray-600">Présentation du livre blanc de la conférence et annonce de la ville hôte de l’année prochaine.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Phase 3 -->
+<section class="py-12 px-4 sm:px-6 lg:px-8 bg-white">
+<div class="mx-auto max-w-5xl">
+<div class="mb-8 border-l-4 border-gray-800 pl-4 flex items-start justify-between">
+<div>
+<h2 class="text-2xl font-bold text-[#181112]">Phase 3 : Atelier de normalisation</h2>
+<div class="mt-1 flex items-center gap-2 text-sm font-medium text-gray-500">
+<span class="inline-flex items-center rounded bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-700 ring-1 ring-inset ring-gray-600/10">Experts uniquement</span>
+<span>•</span>
+<span>5-6 fév. 2026</span>
+</div>
+</div>
+<div class="hidden sm:block">
+<span class="material-symbols-outlined text-4xl text-gray-200">architecture</span>
+</div>
+</div>
+<div class="rounded-2xl bg-[#f0f2f5] p-6 sm:p-8 border border-gray-200">
+<div class="flex flex-col md:flex-row gap-6 items-start">
+<div class="flex-shrink-0 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+<div class="flex flex-col items-center justify-center w-16 text-center">
+<span class="text-xs uppercase font-bold text-gray-500">Fev</span>
+<span class="text-2xl font-black text-primary">05</span>
+<div class="w-full h-px bg-gray-200 my-1"></div>
+<span class="text-2xl font-black text-primary">06</span>
+</div>
+</div>
+<div class="flex-1">
+<h3 class="text-xl font-bold text-[#181112]">Sessions de rédaction technique</h3>
+<p class="mt-2 text-gray-600 leading-relaxed">
+                                    Deux jours de sessions intensives consacrées à la rédaction des amendements pour l’Annexe nationale du bâtiment. La participation nécessite une pré-approbation et une certification technique.
+                                </p>
+<div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex items-center gap-3 bg-white p-3 rounded-lg border border-gray-200">
+<span class="material-symbols-outlined text-gray-400">gavel</span>
+<span class="text-sm font-medium text-gray-700">Normes ISO/TC 59</span>
+</div>
+<div class="flex items-center gap-3 bg-white p-3 rounded-lg border border-gray-200">
+<span class="material-symbols-outlined text-gray-400">security</span>
+<span class="text-sm font-medium text-gray-700">Revue des protocoles de sécurité</span>
+</div>
+<div class="flex items-center gap-3 bg-white p-3 rounded-lg border border-gray-200">
+<span class="material-symbols-outlined text-gray-400">straighten</span>
+<span class="text-sm font-medium text-gray-700">Alignement des mesures</span>
+</div>
+<div class="flex items-center gap-3 bg-white p-3 rounded-lg border border-gray-200">
+<span class="material-symbols-outlined text-gray-400">policy</span>
+<span class="text-sm font-medium text-gray-700">Conformité légale</span>
+</div>
+</div>
+<div class="mt-6">
+<a class="inline-flex items-center text-sm font-bold text-primary hover:underline" href="#">
+                                        Demander l’accréditation d’expert
+                                        <span class="material-symbols-outlined text-lg ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Download CTA -->
+<section class="bg-[#181112] py-10 px-4">
+  <div class="mx-auto max-w-5xl flex flex-col sm:flex-row items-center justify-between gap-6">
+    <div>
+      <h2 class="text-xl font-bold text-white">Besoin de la version hors ligne ?</h2>
+      <p class="text-gray-400 text-sm mt-1">Téléchargez le programme complet détaillé au format PDF.</p>
+    </div>
+    <button class="flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-bold text-[#181112] transition hover:bg-gray-200">
+      <span class="material-symbols-outlined">download</span>
+      Télécharger le programme PDF
+    </button>
+  </div>
+</section>
+
+</main>
+<!-- Footer -->
+<footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-8 text-sm">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <!-- À propos -->
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-2">
+          <div class="flex size-6 items-center justify-center rounded bg-primary overflow-hidden">
+            <img src="assets/logo.jpg" alt="Logo Infra-BTP 2026" class="h-full w-full object-cover">
+          </div>
+          <span class="font-bold text-[#181112]">Infra-BTP 2026</span>
+        </div>
+        <p class="text-gray-500 leading-relaxed">
+          La conférence internationale de référence pour les professionnels de l’infrastructure et les normes de construction.
+        </p>
+      </div>
+      <!-- Liens rapides -->
+      <div class="flex flex-col gap-3">
+        <h4 class="font-bold text-[#181112]">Conférence</h4>
+        <a class="text-gray-500 hover:text-primary" href="#">Programme</a>
+        <a class="text-gray-500 hover:text-primary" href="#">Intervenants</a>
+        <a class="text-gray-500 hover:text-primary" href="#">Sponsors</a>
+        <a class="text-gray-500 hover:text-primary" href="#">Kit Média</a>
+      </div>
+      <!-- Contact -->
+      <div class="flex flex-col gap-3">
+        <h4 class="font-bold text-[#181112]">Contactez-nous</h4>
+        <a class="flex items-center gap-2 text-gray-500 hover:text-primary" href="mailto:info@infrabtp2026.org">
+          <span class="material-symbols-outlined text-sm">mail</span>
+          info@infra-btp-conf.cd
+        </a>
+        <span class="flex items-center gap-2 text-gray-500">
+          <span class="material-symbols-outlined text-sm">call</span>
+          +243 81 323 3515
+        </span>
+        <span class="flex items-center gap-2 text-gray-500">
+          <span class="material-symbols-outlined text-sm">location_on</span>
+          Palais du Peuple, Kinshasa<br/>Democratic Republic of Congo
+        </span>
+      </div>
+      <!-- Newsletter -->
+      <div class="flex flex-col gap-3">
+        <h4 class="font-bold text-[#181112]">Restez informé</h4>
+        <form class="flex gap-2">
+          <input class="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Votre email" type="email"/>
+          <button class="rounded bg-gray-800 px-3 py-2 text-white hover:bg-gray-700" type="button">
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="mt-16 flex flex-col items-center justify-between gap-4 border-t border-gray-200 pt-8 sm:flex-row text-xs text-gray-400">
+      <p>© 2026 Conférence Infra-BTP. Tous droits réservés.</p>
+      <div class="flex gap-6">
+        <a class="hover:text-gray-600" href="#">Politique de confidentialité</a>
+        <a class="hover:text-gray-600" href="#">Conditions d'utilisation</a>
+        <a class="hover:text-gray-600" href="#">Paramètres des cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body></html>

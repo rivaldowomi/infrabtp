@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Partenaires</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#d41121",
+            "background-light": "#f8f6f6",
+            "background-dark": "#221012",
+            "concrete": "#F3F4F6",
+            "steel": "#4B5563",
+          },
+          fontFamily: {
+            "display": ["Inter", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Inter', "Noto Sans", sans-serif;
+    }
+    /* Logo grayscale effect */
+    .partner-logo {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease, transform 0.3s ease;
+    }
+    .partner-logo:hover {
+      filter: grayscale(0%);
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#181112] dark:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- TopNavBar -->
+<div class="layout-container flex w-full flex-col bg-white dark:bg-[#1a1a1a] border-b border-[#e5e7eb] dark:border-[#333]">
+  <div class="flex flex-1 justify-center">
+    <div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+      <header class="flex items-center justify-between whitespace-nowrap px-4 lg:px-10 py-4">
+        <div class="flex items-center gap-4">
+          <div class="flex size-10 items-center justify-center rounded-lg bg-primary overflow-hidden">
+            <img src="assets/logo.jpg"
+                 alt="Logo"
+                 class="h-full w-full object-cover">
+          </div>
+          <h2 class="text-[#181112] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">Infra-BTP</h2>
+        </div>
+        <div class="hidden lg:flex flex-1 justify-end gap-8 items-center">
+          <nav class="flex items-center gap-6">
+            <a class="text-[#181112] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="index.html">Accueil</a>
+            <a class="text-[#181112] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="program.html">Programme</a>
+            <a class="text-[#181112] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="register.html">Inscription</a>
+            <a class="text-[#181112] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="gallery.html">Galerie</a>
+            <a class="text-primary text-sm font-bold border-b-2 border-primary" href="partener.html">Partenaires</a>
+
+            <a class="text-[#181112] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="about.html">À propos</a>
+            <a class="text-[#181112] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+          </nav>
+          <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold leading-normal hover:bg-red-700 transition-colors shadow-sm">
+            <span class="truncate">S'inscrire maintenant</span>
+          </button>
+        </div>
+        <!-- Mobile Menu Icon -->
+        <div class="lg:hidden">
+          <button class="text-[#181112] dark:text-white">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </header>
+    </div>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<div class="bg-concrete dark:bg-[#1f1f1f] w-full">
+  <div class="layout-container flex justify-center py-12 lg:py-20 px-4">
+    <div class="layout-content-container flex flex-col max-w-[960px] flex-1 items-center text-center gap-6">
+      <h1 class="text-[#181112] dark:text-white text-4xl lg:text-5xl font-black leading-tight tracking-[-0.033em]">
+        Partenaires &amp; Soutiens
+      </h1>
+      <p class="text-steel dark:text-gray-300 text-lg max-w-[700px] leading-relaxed">
+        Nous sommes fiers de collaborer avec des institutions et organisations de premier plan, engagées dans l'avancement des standards d'infrastructure. Leur soutien rend cet échange de connaissances possible.
+      </p>
+      <div class="pt-4">
+        <button class="flex items-center gap-2 cursor-pointer justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold shadow-md hover:bg-red-700 transition-all transform hover:-translate-y-0.5">
+          <span class="material-symbols-outlined text-[20px]">handshake</span>
+          <span>Devenir Sponsor</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Institutional Partners Section -->
+<section class="w-full bg-white dark:bg-background-dark py-12 lg:py-16">
+  <div class="layout-container flex justify-center px-4 lg:px-10">
+    <div class="layout-content-container flex flex-col max-w-[1080px] flex-1">
+      <div class="flex items-center gap-4 mb-8">
+        <div class="h-8 w-1 bg-primary rounded-full"></div>
+        <h2 class="text-[#181112] dark:text-white text-2xl lg:text-3xl font-bold tracking-tight">
+          Partenaires Institutionnels
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Partenaire 1 -->
+        <div class="group flex flex-col gap-4 p-6 border border-gray-100 dark:border-gray-800 rounded-xl bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-md transition-shadow">
+          <div class="h-32 w-full flex items-center justify-center p-4">
+            <img alt="Logo Ministère de l'Infrastructure" class="partner-logo max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlRmgcy9voaU__uE7HU1kPKL0HoQMPszyE9RBNK_d2bXGMR5IURIDJouQK52hHuD3e521kZydKfeotchNbSaaK607pLc26XesyNj_cvkabumPYWYHhsgt0__XdLnU0jy4mXdrxF4g6LferNDJwiKe9gZTmsy7dzdAoTJbRUG0A7jOvWeE2QMb-wbinVqxjeWIc3ezAR54cA4hICzuYo2yunDUrvikagfiYD-XQN1kEV5C79kwZcJ7F5uebw_gVOZ5LKV5YR9f6h7k"/>
+          </div>
+          <div class="text-center">
+            <h3 class="font-bold text-lg text-[#181112] dark:text-white mb-1">Ministère de l'Infrastructure</h3>
+            <p class="text-sm text-steel dark:text-gray-400">Partenaire officiel du gouvernement</p>
+          </div>
+        </div>
+        <!-- Partenaire 2 -->
+        <div class="group flex flex-col gap-4 p-6 border border-gray-100 dark:border-gray-800 rounded-xl bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-md transition-shadow">
+          <div class="h-32 w-full flex items-center justify-center p-4">
+            <img alt="Logo Association Nationale des Bâtisseurs" class="partner-logo max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoMo_Go9aXMu2nG5ieoQOahxRBWXScsZTpwqAuM-cXI-BtT1BHuFBS3SWu4SmMhkwUo1CKS7SNVQ5Qy57AsmIe_QhzWbWptqT7a4yi1eRxkhQ9YLYUKN-zSS-QEjVUlCAA09t6sj2sbezBpipTPC3ln5-Nvy8EoSXrBy6jQfeqY_AP1QEiwOpvhP3Pwezn0zW-RkroQGb3HPA8lgNUt2IS0o7dZwhxHjudmY17i0PI-vcWNTTbYD31KNF3VBwfjvTr2KtBxqBOgQc"/>
+          </div>
+          <div class="text-center">
+            <h3 class="font-bold text-lg text-[#181112] dark:text-white mb-1">Association Nationale des Bâtisseurs</h3>
+            <p class="text-sm text-steel dark:text-gray-400">Alliance stratégique</p>
+          </div>
+        </div>
+        <!-- Partenaire 3 -->
+        <div class="group flex flex-col gap-4 p-6 border border-gray-100 dark:border-gray-800 rounded-xl bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-md transition-shadow">
+          <div class="h-32 w-full flex items-center justify-center p-4">
+            <img alt="Logo Conseil d'Urbanisme" class="partner-logo max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp2FcLStD3MSnAoOlI4_pPx2bGYCdTf2di4RPq5HZhxXPQ4PD3ThZN2_ZUGuaHp1wjOe7y7TqEHAtX0VapTLU8qmdbL5u4VE7SaarDWc8t0ekfEcnJEHKTlpfkcduHEqnjo13uLVQTTlzOUNDb3-mNs-8tlYSRyUVdOQg1KKD-u4LyfLcEu6a9qk_b0pfgWY8aXOaY5DDgIoVX5I2LPYyIwQQ8AELyrbCRw1iLwTmksRFkzd6bTorpQbX1uifx0ciuJABWXRuZZ_A"/>
+          </div>
+          <div class="text-center">
+            <h3 class="font-bold text-lg text-[#181112] dark:text-white mb-1">Conseil d'Urbanisme</h3>
+            <p class="text-sm text-steel dark:text-gray-400">Soutien régional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Technical Partners Section -->
+<section class="w-full bg-concrete dark:bg-[#1f1f1f] py-12 lg:py-16 border-t border-gray-200 dark:border-[#333]">
+  <div class="layout-container flex justify-center px-4 lg:px-10">
+    <div class="layout-content-container flex flex-col max-w-[1080px] flex-1">
+      <div class="flex items-center gap-4 mb-8">
+        <div class="h-8 w-1 bg-steel rounded-full"></div>
+        <h2 class="text-[#181112] dark:text-white text-2xl lg:text-3xl font-bold tracking-tight">
+          Partenaires Techniques
+        </h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+        <!-- Partenaire Technique 1 -->
+        <div class="flex items-center justify-center bg-white dark:bg-[#1a1a1a] rounded-lg p-6 h-32 shadow-sm border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-colors">
+          <img alt="Logo TechStruct Engineering" class="partner-logo max-h-full w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw-cQfo3opgysI4V0b_XhDJ3wiGEqQIaMQrOMmKSsBBqRtt8CoNcps1acJQEm0dMMDNS9cW8KI0UqPsw_3Y70A1atScyfqW_WJbFbl6mOcaS1fotFByptYoi1uw2tMLyehwhf-ozIwVK-nW2jSMXGh-8G_qGR_1HrfCfm-mDv8g3xr7MQ3T-jtpGsmajVrh4Fet7kO9-U0mk5LUm8Q9i7HDBu1_p_YBSn15Q0qKtR5UWPG0Y5FOZ9MlkktfGh4Y4_iRomb6_KMTW8"/>
+        </div>
+        <!-- Partenaire Technique 2 -->
+        <div class="flex items-center justify-center bg-white dark:bg-[#1a1a1a] rounded-lg p-6 h-32 shadow-sm border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-colors">
+          <img alt="Logo CivilWorks Labs" class="partner-logo max-h-full w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4TW2-IyPQKH72inrIA4TwzRRuDQMTetKGAw1KaqBe5QPumzMtuu9BaXkw_DuKeRaBd8oMThHISoTsVhU80jwQOWFZ9_Jor8J5kD21A3aLtssuxzP0yDi3q2AA6PGVhWJEENfVQ3KE5Pqxw-kMSAM8BWeFXWiMDxIbSF6MEDMEupdvaysYGtOfkZK2oI_2xUEVkK5YcS5xpy0j9o-DZXPt9nkgUgW0VQ1aeqRVquJRsnj_8EbSKo0oVXwRdU8gpmXVeJriO98IF3U"/>
+        </div>
+        <!-- Partenaire Technique 3 -->
+        <div class="flex items-center justify-center bg-white dark:bg-[#1a1a1a] rounded-lg p-6 h-32 shadow-sm border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-colors">
+          <img alt="Logo Standard ISO Body" class="partner-logo max-h-full w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByoR0W6cYwunxLoZ6RBmsT7Kn1gQULw4vqGv53GOYgjyNtHQMkLcPth5jPhqHrfDYb3Vpz1uP6cL-6poncSlSu3IzLvIsLW9m-60NjZeI1Wz8muzOvciaqtC78IfbXBXaCk-v4KvIZqLTFfNLWaZe8Fq-bjUKhsRTHqV2M1XIabtSl-Ktz_WDJa1GOG6Gb-G6E9PCwxEK8RPrupjBe7DtAQmowtq2gkjYWJzWU2KkmyIku1mVsIjJ3odCAGt5Yg_H5h-qJ5pm58Zc"/>
+        </div>
+        <!-- Partenaire Technique 4 -->
+        <div class="flex items-center justify-center bg-white dark:bg-[#1a1a1a] rounded-lg p-6 h-32 shadow-sm border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-colors">
+          <img alt="Logo GeoSurvey Inc" class="partner-logo max-h-full w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqKiOGNske7wV9p8-16U-hh7AU-FnP35pBqQ5MtgzQT4jVPnHKGQGkCQVso2iwVYd2lIt4cc9p8mWEaP6Z0vq5LGff771m2kylRPR2KywhSr4xa3ac-v5UmHsjnbloOMD5JeM2kIuPlryR5_JVodU7w6wyq985bygbJVueNPGvUdx5GPWZOKla0_acSR-NDaZ_4TkU6E21JCAnFndZNLgkglPnHvuSqc0SrbCcSWYUGlMg7_IkyihytedTK7ECgwb3tvVllAAOPB4"/>
+        </div>
+        <!-- Partenaire Technique 5 -->
+        <div class="flex items-center justify-center bg-white dark:bg-[#1a1a1a] rounded-lg p-6 h-32 shadow-sm border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-colors">
+          <img alt="Logo ConcreteAI Solutions" class="partner-logo max-h-full w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDclO886QCKWlYB4iFVvZEJqxQZ0HdT_7DxvtypXpWUxwaQJ40xjRyaOqHkaABwz9GObw_Ka-LO99tIyHfNDEp0GZ1lMIWx2CeUef2GWyRtvPFPsYs0XYTQWWtpVeyOoTX4MqlVGCXRrztgkDyO7FDy_HAoTCrqEkn7BN0jd8nzb1k7g4d9HGO7FIJJJWMLMZsc1JBSYX9h7pIcghI5Qelq-2aHM0NvLNBbsEVUEN--HkqKReKhOo2uhYYQKDxzTpNVgILeK_IGMwU"/>
+        </div>
+        <!-- Partenaire Technique 6 -->
+        <div class="flex items-center justify-center bg-white dark:bg-[#1a1a1a] rounded-lg p-6 h-32 shadow-sm border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-colors">
+          <img alt="Logo BridgeSafe Systems" class="partner-logo max-h-full w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBqoSOV-F_C20EoOHAxR8oSQWPTCinOSmadYi_np60-9UVQD1k83dy0BHBYhqwvZkwpjPyzUMQ7qpDoYCEo4Io0jXyMvuPvPbIN9eXRhBh38CnLCeLfw5xZsfF2b3hvVnlQ2Zan4whc85NJ4jyLk12ib_M52rUPheK8tc6G70y8sqdCCXXNaFT-B9_8E1V0I4tmDzgzU60yBhGGRinjQKCmiL9NlXljgHGC0dUppEjo5fhd8pRTJZvISntEFmxok8tNkZuzUx2qbg"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sponsors Section -->
+<section class="w-full bg-white dark:bg-background-dark py-12 lg:py-16">
+  <div class="layout-container flex justify-center px-4 lg:px-10">
+    <div class="layout-content-container flex flex-col max-w-[1080px] flex-1">
+      <div class="flex flex-col items-center text-center mb-10">
+        <h2 class="text-[#181112] dark:text-white text-2xl lg:text-3xl font-bold tracking-tight mb-2">
+          Nos Sponsors
+        </h2>
+        <p class="text-steel dark:text-gray-400">
+          Merci aux organisations qui financent notre mission.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <!-- Sponsor 1 -->
+        <div class="group relative flex items-center justify-center aspect-[3/2] bg-gray-50 dark:bg-[#151515] rounded-lg p-4 transition-all hover:bg-white dark:hover:bg-[#222] hover:shadow-lg">
+          <img alt="Logo Sponsor BuildCo" class="partner-logo w-3/4 opacity-70 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSOqWCuNjq8VRKa-Um8mDNapDsqM7D7fAVzGQbSwtruAOpYG0qLgGiu76TgaZUctAlPQpeaU_xX3pp-ZwsZzFgQp8BN4xV96KcT4KFBahH7ZkjYYaiye8M6ZQJr_GkTBnKfJ-bdTUDO7LpGChBimFUsVuaZirPDn7SVRPTG2bl-0jiSxBzAGNr59MrLc-_D5wWWcu64ynuYbJAElyV2CG9RcMgHToTpW75MQyY6gUdviwT8hvIZ76VOnXy9j_L735iyp0mUESnXlo"/>
+        </div>
+        <!-- Sponsor 2 -->
+        <div class="group relative flex items-center justify-center aspect-[3/2] bg-gray-50 dark:bg-[#151515] rounded-lg p-4 transition-all hover:bg-white dark:hover:bg-[#222] hover:shadow-lg">
+          <img alt="Logo Sponsor SteelWorks" class="partner-logo w-3/4 opacity-70 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA96_tJSt_kpQgzaftqd5-6LvSCq_YpXW58uVLFcXAKJU8xQYg3AaUSjM963SDNIuxgA8uwMLQ0Q7BTNzO0jqFaooPT838OUfA4hcsnmz7sLcLFNIP5sqrt5xTcupWPkMtteHTi8vJY7x4frhApwdppr8Ms6BJrMNPvXBxrgeLzEb9YKZbsFEfHHPcVh4Fq55QL5DT7EFrp3iGmQzPcxSIHrU-VEczG1QuI3OpEeBRbSmI33miLe3GUJ4WxgczYzZQfwv4wb_wjzCA"/>
+        </div>
+        <!-- Sponsor 3 -->
+        <div class="group relative flex items-center justify-center aspect-[3/2] bg-gray-50 dark:bg-[#151515] rounded-lg p-4 transition-all hover:bg-white dark:hover:bg-[#222] hover:shadow-lg">
+          <img alt="Logo Sponsor CementFix" class="partner-logo w-3/4 opacity-70 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_F2SZk9Q2nCqWdHbB04WWBxP31B4dEOT8m2R_MpZ7dZOHTygB8CPVswZA5HcsktCocwcu-YARZuT2RrBKT-Joikr_6h_wFNkLJEwgqI8KMqdgbfYaKwaTXjWlGGufo40sGsHAei2SaWms5YFPWplEoMrhBp4IbqU3ZwNf-mprtzOo4LKboArnMhpopr4k5QztEROL6pccNAI0FidF4N1NnrUFoUVe9lBYtbUeG0yehsZZpPoxeA3WPBcAUDEM1VD1R_axoSnUNMw"/>
+        </div>
+        <!-- Sponsor 4 -->
+        <div class="group relative flex items-center justify-center aspect-[3/2] bg-gray-50 dark:bg-[#151515] rounded-lg p-4 transition-all hover:bg-white dark:hover:bg-[#222] hover:shadow-lg">
+          <img alt="Logo Sponsor HeavyLift" class="partner-logo w-3/4 opacity-70 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt7G8fjr-2t3aFzVUy079pvb7h-7Mh7AbebktAHwDh2EBL4AJY97pJQAYQmdlHX892PXF1ZprPvJta6DeRfaTDu4UGiqx-5OeOCe6dHwkS1r2aMIMCCEehGDrtmolFs8m16VbpXGTjf7cZxEPnW0t0EEM59FzqAZBws3K_OJO8H3b5KtyZQw49LztFyht9wj6QiuoN83p_53AyFJtwdBOltFhdYhIvXDLSdKStgQT_Zo2ggaZYu125BXosrU2y5y-bHnDG0CbHiII"/>
+        </div>
+        <!-- Sponsor 5 -->
+        <div class="group relative flex items-center justify-center aspect-[3/2] bg-gray-50 dark:bg-[#151515] rounded-lg p-4 transition-all hover:bg-white dark:hover:bg-[#222] hover:shadow-lg">
+          <img alt="Logo Sponsor InfraTech" class="partner-logo w-3/4 opacity-70 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDpI4_xLOtzHM_PZW-_3dlUQspFKnKVFztuzieFZlXBskVkQClsk_wX2pXjCGpsvu18hci3fKIp-UrkC01alhtK_IDQauGkW6YGavwN4acvXbVTXTlGJIkDMZ96e440IAlCDo7mHTMSE7SuQ8gGy_5VCQkDaLcU62TPGOfCqrwvSMj5jMGoesX4YEUua7JgVjTs3BttBKAaUbWySrlM5XmguC_KMG0OvRRc40nMZ2u2JM7Z1mmSSG7OAt-a0v8sXHYU8edsFx7mIs"/>
+        </div>
+        <!-- Sponsor 6 -->
+        <div class="group relative flex items-center justify-center aspect-[3/2] bg-gray-50 dark:bg-[#151515] rounded-lg p-4 transition-all hover:bg-white dark:hover:bg-[#222] hover:shadow-lg">
+          <img alt="Logo Sponsor GlobalPave" class="partner-logo w-3/4 opacity-70 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrPUOZZyb-BRVk9B1WETpOJTnLlH_6tPn6CsVuDneI-XDJcggN7YkHOwAgD7qXwtiPEsRCb2naQXGC4lyAd0mFg08ke5leT6ZQIkAq0s4xtpxFpQTE3TDkA2SJJa7BQqZF47eCX94Wcs6mF_xFbynSwg1lJfPSLfmCulRKCOn3s0EaMweGAW_taA8cw4Xnw0EPDqz0sjbeQnCwHNqcFTbbWA_UFoUptylY_qGWi1GYiBehde1mJNYluGCCtNVK0BDz7ap8h88WX0Y"/>
+        </div>
+        <!-- Sponsor 7 -->
+        <div class="group relative flex items-center justify-center aspect-[3/2] bg-gray-50 dark:bg-[#151515] rounded-lg p-4 transition-all hover:bg-white dark:hover:bg-[#222] hover:shadow-lg">
+          <img alt="Logo Sponsor SecureSite" class="partner-logo w-3/4 opacity-70 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgwoB-EWlwJbxoA6mBOmRzKTFLiih_i_ysqulNb-2rFkb9J8hMeHBL90z1-bwYffGVgXZ_IC9FJReHhZG_hzz8kpBs5EK3Ij6NZ3HBj6Qk_CrVFH11ItNaAAsR8Kf7C4kE3t26SuxZ7pFseqYN-nYqnSGGXCagAZzcAe9uWKkuUzNmDQWVxTDoa-s0d8khEibH7a0Kcu3R34o09gSR7eh94jtDNwsGsA5ACJIcbTE8ROCJLYgeOjzPcnVWH8ggoVx4LC1HiZ13GAs"/>
+        </div>
+        <!-- Sponsor 8 -->
+        <div class="group relative flex items-center justify-center aspect-[3/2] bg-gray-50 dark:bg-[#151515] rounded-lg p-4 transition-all hover:bg-white dark:hover:bg-[#222] hover:shadow-lg">
+          <img alt="Logo Sponsor EcoBuild" class="partner-logo w-3/4 opacity-70 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzq_ZRLinabGZP2kGnP5OotoMQe2QnOk7iKmdcUdg6Wq7-DQBeXzNKybW2as9Od5-h2Ws5hbBKM3CW68Bj8J7HfTgVH2GksUorLKTH7rXIRDixLcvWY0DCMTmXlDACC4zZqAaH7QDG83KbftdMDnnCKDI81FWdlVbaz6_D5yHQUp873Ol20YHGeFvzSeBRlQLwU_eSPH3hfM31Z4WRbRsCvZwK-RCS1umPhlixljYLmMhjjJVt87PJXek4H-0wdv-HMF8gQyDxWzM"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Banner -->
+<section class="w-full bg-primary/5 dark:bg-primary/10 py-16">
+  <div class="layout-container flex justify-center px-4 lg:px-10">
+    <div class="layout-content-container flex flex-col md:flex-row items-center justify-between max-w-[1080px] flex-1 gap-8 rounded-2xl bg-white dark:bg-[#1a1a1a] p-8 lg:p-12 border border-gray-100 dark:border-gray-800 shadow-lg">
+      
+      <div class="flex flex-col gap-3 max-w-xl">
+        <h3 class="text-2xl font-bold text-[#181112] dark:text-white">
+          Intéressé par le soutien à Infra-BTP ?
+        </h3>
+        <p class="text-steel dark:text-gray-300">
+          Rejoignez les leaders du secteur pour façonner l'avenir des infrastructures. Téléchargez notre kit de sponsoring pour découvrir les avantages.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+        <button class="flex items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-primary text-white font-bold h-12 px-6 shadow-md hover:bg-red-700 transition-colors w-full sm:w-auto">
+          <span class="material-symbols-outlined">download</span>
+          Télécharger le Kit
+        </button>
+        <button class="flex items-center justify-center gap-2 whitespace-nowrap rounded-lg border-2 border-primary text-primary font-bold h-12 px-6 hover:bg-primary/5 transition-colors w-full sm:w-auto">
+          Contactez-nous
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#181112] text-white py-12 border-t border-gray-800">
+  <div class="layout-container flex justify-center px-4 lg:px-10">
+    <div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+        <!-- Logo + description -->
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-3 text-white">
+            <div class="size-6 text-primary">
+              <span class="material-symbols-outlined">construction</span>
+            </div>
+            <h2 class="text-lg font-bold">Infra-BTP</h2>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            La conférence de référence sur les standards d'infrastructure, réunissant experts et institutions du monde entier.
+          </p>
+        </div>
+
+        <!-- Liens rapides -->
+        <div class="flex flex-col gap-4">
+          <h3 class="font-bold text-base">Liens rapides</h3>
+          <div class="flex flex-col gap-2">
+            <a class="text-gray-400 hover:text-white text-sm" href="#">Programme</a>
+            <a class="text-gray-400 hover:text-white text-sm" href="#">Inscription</a>
+            <a class="text-gray-400 hover:text-white text-sm" href="#">Intervenants</a>
+            <a class="text-gray-400 hover:text-white text-sm" href="#">Partenaires</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="flex flex-col gap-4">
+          <h3 class="font-bold text-base">Contact</h3>
+          <div class="flex flex-col gap-3 text-gray-400 text-sm">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">mail</span>
+              <a class="hover:text-white" href="mailto:contact@infra-btp.org">info@infra-btp-conf.cd</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">call</span>
+              <span>+243 81 323 3515</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">location_on</span>
+              <span>Palais du Peuple, Kinshasa<br/>Democratic Republic of Congo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div class="flex flex-col gap-4">
+          <h3 class="font-bold text-base">Suivez-nous</h3>
+          <div class="flex gap-4">
+            <a class="size-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors text-white" href="#">
+              <span class="text-xs font-bold">in</span>
+            </a>
+            <a class="size-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors text-white" href="#">
+              <span class="text-xs font-bold">X</span>
+            </a>
+            <a class="size-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors text-white" href="#">
+              <span class="text-xs font-bold">fb</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bas du footer -->
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+        <p>© 2024 Conférence Infra-BTP. Tous droits réservés.</p>
+        <div class="flex gap-6">
+          <a class="hover:text-white" href="#">Politique de confidentialité</a>
+          <a class="hover:text-white" href="#">Conditions d'utilisation</a>
+          <a class="hover:text-white" href="#">Cookies</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</div>
+</body></html>

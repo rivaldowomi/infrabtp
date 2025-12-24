@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inscription</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#d41121",
+                    "background-light": "#f8f6f6",
+                    "background-dark": "#221012",
+                    "concrete": "#e6dbdc",
+                    "steel": "#4b5563",
+                },
+                fontFamily: {
+                    "display": ["Inter", "sans-serif"],
+                    "body": ["Noto Sans", "sans-serif"],
+                },
+                borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+        },
+    }
+</script>
+</head>
+<body class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden font-display antialiased text-[#181112] dark:text-white">
+
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 bg-white dark:bg-[#1a0f10] border-b border-solid border-[#f4f0f0] dark:border-[#3a2e30]">
+<div class="layout-container flex justify-center w-full">
+<div class="flex w-full max-w-[1280px] items-center justify-between px-6 lg:px-10 py-3">
+<div class="flex items-center gap-4 text-[#181112] dark:text-white">
+<div class="flex size-10 items-center justify-center rounded-lg bg-primary overflow-hidden">
+    <img src="assets/logo.jpg"
+         alt="Logo"
+         class="h-full w-full object-cover">
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Infra-BTP</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-6 xl:gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors text-[#181112] dark:text-gray-200" href="index.html">Accueil</a>
+
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors text-[#181112] dark:text-gray-200" href="program.html">Programme</a>
+<a class="text-sm font-bold leading-normal text-primary" href="register.html">Inscription</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors text-[#181112] dark:text-gray-200" href="gallery.html">Galerie</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors text-[#181112] dark:text-gray-200" href="partener.html">Partenaires</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors text-[#181112] dark:text-gray-200" href="about.html">À propos</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-red-700 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em] shadow-sm">
+<span class="truncate">Contact</span>
+</button>
+</div>
+<!-- Mobile Menu Icon -->
+<div class="lg:hidden">
+<button class="text-[#181112] dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+
+<main class="flex-grow flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-[960px] flex flex-col gap-6">
+
+<!-- Page Heading -->
+<div class="flex flex-col gap-3 py-4">
+<p class="text-[#181112] dark:text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">Inscription à la conférence</p>
+<p class="text-[#896165] dark:text-gray-400 text-lg font-normal leading-normal max-w-2xl">
+Réservez votre place à la conférence Infra-BTP & Standards. Rejoignez les leaders du secteur pour définir l’avenir des normes de construction. L’inscription anticipée est recommandée.
+</p>
+</div>
+
+<!-- Form Container -->
+<form class="bg-white dark:bg-[#1a0f10] rounded-xl shadow-lg border border-[#e6dbdc] dark:border-[#3a2e30] overflow-hidden">
+
+<!-- Section 1: Personal Information -->
+<div class="p-6 sm:p-10 border-b border-[#f4f0f0] dark:border-[#3a2e30]">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">person</span>
+<h3 class="text-[#181112] dark:text-white text-xl font-bold leading-tight">Informations personnelles</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<label class="flex flex-col w-full">
+<p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Nom complet <span class="text-primary">*</span></p>
+<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="ex. Jean Dupont" required="" type="text"/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Adresse email <span class="text-primary">*</span></p>
+<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="jean@example.com" required="" type="email"/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Téléphone / WhatsApp <span class="text-primary">*</span></p>
+<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="+243 81 00 00 00 00" required="" type="tel"/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Ville & Pays <span class="text-primary">*</span></p>
+<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="ex. Kinshasa, RDC" required="" type="text"/>
+</label>
+</div>
+</div>
+
+<!-- Section 2: Professional Details -->
+<div class="p-6 sm:p-10 border-b border-[#f4f0f0] dark:border-[#3a2e30]">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">work</span>
+<h3 class="text-[#181112] dark:text-white text-xl font-bold leading-tight">Informations professionnelles</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<label class="flex flex-col w-full">
+<p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Organisation / Institution <span class="text-primary">*</span></p>
+<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="Nom de l’entreprise" required="" type="text"/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Fonction / Rôle <span class="text-primary">*</span></p>
+<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="ex. Ingénieur civil" required="" type="text"/>
+</label>
+</div>
+</div>
+
+<!-- Section 3: Participation Options -->
+<div class="p-6 sm:p-10 bg-background-light/50 dark:bg-background-dark/30">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">event_available</span>
+<h3 class="text-[#181112] dark:text-white text-xl font-bold leading-tight">Options de participation</h3>
+</div>
+<div class="flex flex-col gap-4">
+<label class="relative flex items-start p-4 cursor-pointer rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] hover:border-primary/50 transition-all shadow-sm">
+<div class="flex items-center h-6">
+<input checked="" class="size-5 rounded border-gray-300 text-primary focus:ring-primary" type="checkbox"/>
+</div>
+<div class="ml-3 text-sm leading-6">
+<p class="font-bold text-[#181112] dark:text-white text-base">Participation à la conférence principale</p>
+<p class="text-[#896165] dark:text-gray-400">Accès à toutes les conférences, panels et événements de réseautage.</p>
+</div>
+</label>
+<label class="relative flex items-start p-4 cursor-pointer rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] hover:border-primary/50 transition-all shadow-sm group">
+<div class="flex items-center h-6">
+<input class="size-5 rounded border-gray-300 text-primary focus:ring-primary" id="workshop-check" type="checkbox"/>
+</div>
+<div class="ml-3 text-sm leading-6">
+<p class="font-bold text-[#181112] dark:text-white text-base">Participation à l’atelier de normalisation</p>
+<p class="text-[#896165] dark:text-gray-400">Rejoignez les groupes de travail techniques. Places limitées.</p>
+</div>
+</label>
+</div>
+</div>
+
+<!-- Section 4: Workshop Details -->
+<div class="p-6 sm:p-10 border-t border-[#f4f0f0] dark:border-[#3a2e30] bg-[#fcf8f8] dark:bg-[#25181a]">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-sm">info</span>
+<h4 class="text-[#181112] dark:text-white text-sm font-bold uppercase tracking-wider opacity-80">Détails participants atelier</h4>
+</div>
+<p class="text-sm text-[#896165] dark:text-gray-400 mb-6">Si vous avez sélectionné l’atelier de normalisation, veuillez compléter les champs suivants pour nous aider à organiser les sessions.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<label class="flex flex-col w-full">
+<p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Domaine d’expertise</p>
+<select class="form-select flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 text-base transition-all">
+<option disabled="" selected="" value="">Sélectionnez votre domaine</option>
+<option>Génie structurel</option>
+<option>Génie géotechnique</option>
+<option>Science des matériaux</option>
+<option>Urbanisme et réglementations</option>
+<option>Durabilité & Bâtiments verts</option>
+<option>Autre</option>
+</select>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Années d’expérience</p>
+<select class="form-select flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 text-base transition-all">
+<option disabled="" selected="" value="">Sélectionnez la durée</option>
+<option>0-2 ans</option>
+<option>3-5 ans</option>
+<option>5-10 ans</option>
+<option>10+ ans</option>
+</select>
+</label>
+</div>
+<label class="flex flex-col w-full">
+<p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Proposez un sujet (facultatif)</p>
+<textarea class="form-textarea flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary min-h-[100px] p-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all resize-y" placeholder="Décrivez brièvement un thème ou une norme que vous souhaitez discuter..."></textarea>
+</label>
+</div>
+
+<!-- Submit Action -->
+<div class="p-6 sm:p-10 bg-white dark:bg-[#1a0f10] border-t border-[#f4f0f0] dark:border-[#3a2e30] flex flex-col sm:flex-row items-center justify-between gap-6">
+<p class="text-xs text-[#896165] dark:text-gray-500 text-center sm:text-left">
+En soumettant ce formulaire, vous reconnaissez que les informations fournies seront utilisées pour l’organisation de la conférence.
+</p>
+<button class="flex w-full sm:w-auto min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-primary hover:bg-red-700 text-white text-base font-bold leading-normal tracking-[0.015em] shadow-md transition-transform active:scale-95" type="submit">
+Soumettre l’inscription
+</button>
+</div>
+</form>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-white dark:bg-[#1a0f10] border-t border-[#f4f0f0] dark:border-[#3a2e30] mt-auto">
+<div class="layout-container flex justify-center w-full py-12 px-6 lg:px-10">
+<div class="w-full max-w-[1280px] grid grid-cols-1 md:grid-cols-4 gap-10">
+
+<!-- Brand Col -->
+<div class="md:col-span-2 flex flex-col gap-4">
+<div class="flex items-center gap-3 text-[#181112] dark:text-white">
+<div class="flex size-6 items-center justify-center rounded bg-primary overflow-hidden">
+            <img src="assets/logo.jpg" alt="Logo Infra-BTP 2026" class="h-full w-full object-cover">
+          </div>
+<h3 class="text-lg font-bold">Infra-BTP &  Normes Conf</h3>
+</div>
+<p class="text-[#896165] dark:text-gray-400 text-sm leading-relaxed max-w-sm">
+Rassembler experts, décideurs et leaders de l’industrie pour façonner l’avenir de l’infrastructure et de la normalisation.
+</p>
+<div class="flex gap-4 mt-2">
+<a class="size-8 rounded-full bg-background-light dark:bg-[#2a1d1f] flex items-center justify-center text-[#181112] dark:text-white hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="size-8 rounded-full bg-background-light dark:bg-[#2a1d1f] flex items-center justify-center text-[#181112] dark:text-white hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+
+<!-- Links Col -->
+<div class="flex flex-col gap-4">
+<h4 class="text-[#181112] dark:text-white font-bold text-sm uppercase tracking-wider">Liens rapides</h4>
+<nav class="flex flex-col gap-3">
+<a class="text-sm text-[#4b5563] dark:text-gray-400 hover:text-primary transition-colors" href="#">Programme</a>
+<a class="text-sm text-[#4b5563] dark:text-gray-400 hover:text-primary transition-colors" href="#">Intervenants</a>
+<a class="text-sm text-[#4b5563] dark:text-gray-400 hover:text-primary transition-colors" href="#">Informations partenaires</a>
+<a class="text-sm text-[#4b5563] dark:text-gray-400 hover:text-primary transition-colors" href="#">Kit presse</a>
+</nav>
+</div>
+
+<!-- Contact Col -->
+<div class="flex flex-col gap-4">
+<h4 class="text-[#181112] dark:text-white font-bold text-sm uppercase tracking-wider">Contact</h4>
+<div class="flex flex-col gap-3 text-sm text-[#4b5563] dark:text-gray-400">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">mail</span>
+<span>info@infra-btp-conf.cd</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">call</span>
+<span>+243 81 323 3515</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">location_on</span>
+<span>Casablanca, Maroc</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Bottom Bar -->
+<div class="border-t border-[#f4f0f0] dark:border-[#2a1d1f] py-6">
+<div class="flex flex-col md:flex-row items-center justify-center gap-4 text-xs text-[#896165] dark:text-gray-500">
+<p>© 2024 Infra-BTP & Standards. Tous droits réservés.</p>
+<div class="hidden md:block w-px h-3 bg-gray-300 dark:bg-gray-700"></div>
+<div class="flex gap-4">
+<a class="hover:text-primary" href="#">Politique de confidentialité</a>
+<a class="hover:text-primary" href="#">Conditions d’utilisation</a>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
