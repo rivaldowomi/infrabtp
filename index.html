@@ -92,15 +92,48 @@
 </nav>
 
 <!-- Mobile Nav -->
-<nav id="mobile-menu" class="md:hidden hidden flex-col gap-4 bg-white w-full px-4 py-4 border-t border-concrete">
-    <a class="text-sm font-medium text-primary transition-colors hover:text-primary-dark" href="#">Acceuil</a>
-    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="program.html">Programme</a>
-    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="register.html">Inscription</a>
-    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="gallery.html">Galerie</a>
-    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="partener.html">Partenaires</a>
-    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="about.html">A propos</a>
-    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="contact.html">Contact</a>
+<!-- Mobile Menu -->
+<nav id="mobile-menu"
+     class="md:hidden hidden flex flex-col gap-4 bg-white dark:bg-[#1a0f10]
+            w-full px-6 py-6 border-t border-[#f4f0f0] dark:border-[#3a2e30]">
+
+  <a href="index.html"
+     class="text-base font-semibold text-primary py-2 border-b border-gray-100 dark:border-gray-800">
+     Accueil
+  </a>
+
+  <a href="program.html"
+     class="text-base font-medium text-[#181112] dark:text-white py-2">
+     Programme
+  </a>
+
+  <a href="register.html"
+     class="text-base font-medium text-[#181112] dark:text-white py-2">
+     Inscription
+  </a>
+
+  <a href="gallery.html"
+     class="text-base font-medium text-[#181112] dark:text-white py-2">
+     Galerie
+  </a>
+
+  <a href="partener.html"
+     class="text-base font-medium text-[#181112] dark:text-white py-2">
+     Partenaires
+  </a>
+
+  <a href="about.html"
+     class="text-base font-medium text-[#181112] dark:text-white py-2">
+     À propos
+  </a>
+
+  <a href="contact.html"
+     class="text-base font-medium text-[#181112] dark:text-white py-2">
+     Contact
+  </a>
+
 </nav>
+
 
 <!-- CTA -->
 <div class="flex items-center gap-4">
@@ -109,9 +142,10 @@
     S’inscrire
 </a>
 <!-- Mobile Menu Icon -->
-<button class="flex md:hidden text-steel">
-<span class="material-symbols-outlined">menu</span>
+<button id="menu-toggle" class="flex md:hidden text-[#181112] dark:text-white">
+  <span class="material-symbols-outlined text-3xl">menu</span>
 </button>
+
 </div>
 </div>
 </header>
@@ -377,13 +411,14 @@
 </div>
 
 <script>
-const menuButton = document.querySelector('header button'); // le bouton menu
-const mobileMenu = document.getElementById('mobile-menu');
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
 
-menuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden'); // toggle show/hide
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
 });
 </script>
+
 
 
 
