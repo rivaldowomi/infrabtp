@@ -35,6 +35,12 @@
             },
         }
     </script>
+    <style>
+       #mobile-menu {
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+        }
+    </style>
 </head>
 <body class="font-display bg-background-light dark:bg-background-dark text-steel-gray dark:text-gray-100 antialiased overflow-x-hidden transition-colors duration-200">
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
@@ -66,6 +72,17 @@
     <span class="truncate">Inscrivez-vous</span>
   </button>
 </div>
+
+<!-- Mobile Nav -->
+<nav id="mobile-menu" class="md:hidden hidden flex-col gap-4 bg-white w-full px-4 py-4 border-t border-concrete">
+    <a class="text-sm font-medium text-primary transition-colors hover:text-primary-dark" href="#">Acceuil</a>
+    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="program.html">Programme</a>
+    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="register.html">Inscription</a>
+    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="gallery.html">Galerie</a>
+    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="partener.html">Partenaires</a>
+    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="about.html">A propos</a>
+    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="contact.html">Contact</a>
+</nav>
 
 <!-- Mobile Menu Icon -->
 <div class="lg:hidden flex items-center">
@@ -304,4 +321,16 @@
 </footer>
 
 </div>
+
+<script>
+const menuButton = document.querySelector('header button'); // le bouton menu
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden'); // toggle show/hide
+});
+</script>
+
+
+
 </body></html>

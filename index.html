@@ -55,6 +55,12 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
+        #mobile-menu {
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+        }
+
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-text-main font-display antialiased">
@@ -84,6 +90,18 @@
 <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="about.html">A propos</a>
 <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="contact.html">Contact</a>
 </nav>
+
+<!-- Mobile Nav -->
+<nav id="mobile-menu" class="md:hidden hidden flex-col gap-4 bg-white w-full px-4 py-4 border-t border-concrete">
+    <a class="text-sm font-medium text-primary transition-colors hover:text-primary-dark" href="#">Acceuil</a>
+    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="program.html">Programme</a>
+    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="register.html">Inscription</a>
+    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="gallery.html">Galerie</a>
+    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="partener.html">Partenaires</a>
+    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="about.html">A propos</a>
+    <a class="text-sm font-medium text-steel transition-colors hover:text-primary" href="contact.html">Contact</a>
+</nav>
+
 <!-- CTA -->
 <div class="flex items-center gap-4">
 <a href="register.html"
@@ -357,4 +375,16 @@
 </div>
 </footer>
 </div>
+
+<script>
+const menuButton = document.querySelector('header button'); // le bouton menu
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden'); // toggle show/hide
+});
+</script>
+
+
+
 </body></html>
