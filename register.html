@@ -261,12 +261,13 @@ class="bg-white dark:bg-[#1a0f10] rounded-xl shadow-lg border border-[#e6dbdc] d
 </script>
 
 
+
 <!-- Submit Action -->
 <div class="p-6 sm:p-10 bg-white dark:bg-[#1a0f10] border-t border-[#f4f0f0] dark:border-[#3a2e30] flex flex-col sm:flex-row items-center justify-between gap-6">
 <p class="text-xs text-[#896165] dark:text-gray-500 text-center sm:text-left">
 En soumettant ce formulaire, vous reconnaissez que les informations fournies seront utilisées pour l’organisation de la conférence et de l'atélier.
 </p>
-<button class="flex w-full sm:w-auto min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-primary hover:bg-red-700 text-white text-base font-bold leading-normal tracking-[0.015em] shadow-md transition-transform active:scale-95" type="submit">
+<button id="submit-btn" class="flex w-full sm:w-auto min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-primary hover:bg-red-700 text-white text-base font-bold leading-normal tracking-[0.015em] shadow-md transition-transform active:scale-95" type="submit">
 Soumettre l’inscription
 </button>
 </div>
@@ -345,5 +346,43 @@ Rassembler experts, décideurs et leaders de l’industrie pour façonner l’av
 </div>
 </div>
 </footer>
+
+<!-- Loader Overlay -->
+<div id="form-loader" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 backdrop-blur-sm">
+  <div class="bg-white dark:bg-[#1a0f10] rounded-xl px-8 py-6 shadow-xl flex flex-col items-center gap-4">
+    <svg class="animate-spin h-8 w-8 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+      <path class="opacity-75" fill="currentColor"
+        d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+    </svg>
+    <p class="text-sm font-semibold text-[#181112] dark:text-white">
+      Envoi de votre inscription…
+    </p>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('registrationForm');
+  const loader = document.getElementById('form-loader');
+  const submitBtn = document.getElementById('submit-btn');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // bloque la soumission immédiate
+
+    loader.classList.remove('hidden');
+    loader.classList.add('flex');
+
+    submitBtn.disabled = true;
+    submitBtn.classList.add('opacity-60', 'cursor-not-allowed');
+
+    // laisse le temps au loader de s'afficher
+    setTimeout(() => {
+      form.submit(); // envoi réel du formulaire
+    }, 300);
+  });
+</script>
+
+
+
 </body>
 </html>
