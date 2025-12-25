@@ -84,7 +84,13 @@ Réservez votre place à la conférence Infra-BTP & Standards. Rejoignez les lea
 </div>
 
 <!-- Form Container -->
-<form class="bg-white dark:bg-[#1a0f10] rounded-xl shadow-lg border border-[#e6dbdc] dark:border-[#3a2e30] overflow-hidden">
+<form 
+id="registrationForm"
+  method="POST"
+  action="https://script.google.com/macros/s/AKfycbx4Jfoc0BrAyA2BAY-xhTgB5dHomuL8oqkTSCGN8vb2KBQV58jqDUQeeSzsNP772YRK/exec"
+  
+
+class="bg-white dark:bg-[#1a0f10] rounded-xl shadow-lg border border-[#e6dbdc] dark:border-[#3a2e30] overflow-hidden">
 
 <!-- Section 1: Personal Information -->
 <div class="p-6 sm:p-10 border-b border-[#f4f0f0] dark:border-[#3a2e30]">
@@ -95,19 +101,19 @@ Réservez votre place à la conférence Infra-BTP & Standards. Rejoignez les lea
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <label class="flex flex-col w-full">
 <p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Nom complet <span class="text-primary">*</span></p>
-<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="ex. Jean Dupont" required="" type="text"/>
+<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" name="nom_complet" placeholder="ex. Jean Dupont" required="" type="text"/>
 </label>
 <label class="flex flex-col w-full">
 <p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Adresse email <span class="text-primary">*</span></p>
-<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="jean@example.com" required="" type="email"/>
+<input name="email" class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="jean@example.com" required="" type="email"/>
 </label>
 <label class="flex flex-col w-full">
 <p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Téléphone / WhatsApp <span class="text-primary">*</span></p>
-<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="+243 81 00 00 00 00" required="" type="tel"/>
+<input name="telephone" class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="+243 81 00 00 00 00" required="" type="tel"/>
 </label>
 <label class="flex flex-col w-full">
 <p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Ville & Pays <span class="text-primary">*</span></p>
-<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="ex. Kinshasa, RDC" required="" type="text"/>
+<input name="ville_pays" class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="ex. Kinshasa, RDC" required="" type="text"/>
 </label>
 </div>
 </div>
@@ -121,11 +127,11 @@ Réservez votre place à la conférence Infra-BTP & Standards. Rejoignez les lea
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <label class="flex flex-col w-full">
 <p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Organisation / Institution <span class="text-primary">*</span></p>
-<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="Nom de l’entreprise" required="" type="text"/>
+<input name="organisation" class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="Nom de l’entreprise" required="" type="text"/>
 </label>
 <label class="flex flex-col w-full">
 <p class="text-[#181112] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Fonction / Rôle <span class="text-primary">*</span></p>
-<input class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="ex. Ingénieur civil" required="" type="text"/>
+<input name="fonction" class="form-input flex w-full rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-[#fdfbfb] dark:bg-[#2a1d1f] text-[#181112] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 px-4 placeholder:text-[#896165] dark:placeholder:text-gray-500 text-base transition-all" placeholder="ex. Ingénieur civil" required="" type="text"/>
 </label>
 </div>
 </div>
@@ -142,7 +148,7 @@ Réservez votre place à la conférence Infra-BTP & Standards. Rejoignez les lea
         <input name="conference_participation" checked="" class="size-5 rounded border-gray-300 text-primary" type="checkbox" />
       </div>
       <div class="ml-3 text-sm leading-6">
-        <p class="font-bold text-[#181112] dark:text-white text-base">Participation à la conférence principale</p>
+        <p class="font-bold text-[#181112] dark:text-white text-base">Participation à la conférence nationale Infra-BTP.</p>
         <p class="text-[#896165] dark:text-gray-400">Accès à toutes les conférences, panels et événements de réseautage.</p>
       </div>
     </label>
@@ -152,10 +158,54 @@ Réservez votre place à la conférence Infra-BTP & Standards. Rejoignez les lea
         <input name="workshop_participation" class="size-5 rounded border-gray-300 text-primary" id="workshop-check" type="checkbox"/>
       </div>
       <div class="ml-3 text-sm leading-6">
-        <p class="font-bold text-[#181112] dark:text-white text-base">Participation à l’atelier de normalisation</p>
+        <p class="font-bold text-[#181112] dark:text-white text-base">Participation à l’atelier commission normalisation.</p>
         <p class="text-[#896165] dark:text-gray-400">Rejoignez les groupes de travail techniques. Places limitées.</p>
       </div>
     </label>
+
+
+   <label class="relative block p-4 cursor-pointer rounded-lg border border-[#e6dbdc] dark:border-[#554042] bg-white dark:bg-[#2a1d1f] hover:border-primary/50 transition-all shadow-sm">
+  
+  <p class="font-bold text-[#181112] dark:text-white text-base mb-1">
+    Participation aux frais
+  </p>
+  <p class="text-[#896165] dark:text-gray-400 text-sm mb-3">
+    Veuillez choisir le type de participation.
+  </p>
+
+  <div class="flex items-center gap-6">
+    <!-- Individuel -->
+    <div class="flex items-center gap-2">
+      <input 
+        type="radio"
+        name="participation_frais"
+        value="individuel"
+        checked
+        class="size-5 rounded-full border-gray-300 text-primary"
+      />
+      <span class="text-sm font-medium text-[#181112] dark:text-white">
+        Individuel
+      </span>
+    </div>
+
+    <!-- Entreprise -->
+    <div class="flex items-center gap-2">
+      <input 
+        type="radio"
+        name="participation_frais"
+        value="entreprise"
+        class="size-5 rounded-full border-gray-300 text-primary"
+      />
+      <span class="text-sm font-medium text-[#181112] dark:text-white">
+        Entreprise
+      </span>
+    </div>
+  </div>
+
+</label>
+
+
+
   </div>
 </div>
 
@@ -214,7 +264,7 @@ Réservez votre place à la conférence Infra-BTP & Standards. Rejoignez les lea
 <!-- Submit Action -->
 <div class="p-6 sm:p-10 bg-white dark:bg-[#1a0f10] border-t border-[#f4f0f0] dark:border-[#3a2e30] flex flex-col sm:flex-row items-center justify-between gap-6">
 <p class="text-xs text-[#896165] dark:text-gray-500 text-center sm:text-left">
-En soumettant ce formulaire, vous reconnaissez que les informations fournies seront utilisées pour l’organisation de la conférence.
+En soumettant ce formulaire, vous reconnaissez que les informations fournies seront utilisées pour l’organisation de la conférence et de l'atélier.
 </p>
 <button class="flex w-full sm:w-auto min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-primary hover:bg-red-700 text-white text-base font-bold leading-normal tracking-[0.015em] shadow-md transition-transform active:scale-95" type="submit">
 Soumettre l’inscription

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Confirmation d'Inscription</title>
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ec1325",
+              "background-light": "#f8f6f6",
+              "background-dark": "#221012",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center p-4 antialiased">
+<!-- Central Card Container -->
+<div class="w-full max-w-[580px] bg-white dark:bg-[#1f1617] rounded-xl shadow-xl overflow-hidden flex flex-col relative border border-gray-100 dark:border-gray-800">
+<!-- Top Image Banner -->
+<div class="relative w-full h-40 bg-gray-200">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="Abstract minimalist geometric shapes in red and grey tones" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAbSxyuXk8sZBlldfxuVJnTW-d-V7clK6UF-9hibOa-Ml-9OmC8UwyBUbjGYzOrvlE3D4A9r_S73p0DvDsmKbz2i-q-yx9hotKpxV5a9Iorb_nh4SmMDEqnR2t1L5K9EGytGwYR77OCy4tmi40uRLum4pPgdCxjXLp6V-WxzrkIbzgBXlXAoG-OGQYGpl8W00Hz3i8p-H6KT_B7oFzLAkiSXi3H1iSpGL7KRQc-dvYX2lP6J6KUnyw39ig5O88GIMRGungrTTaaP0A");'>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+</div>
+<!-- Success Icon Badge - Centered on overlap -->
+<div class="absolute -bottom-10 left-1/2 -translate-x-1/2 flex items-center justify-center">
+<div class="bg-white dark:bg-[#1f1617] p-1.5 rounded-full shadow-lg">
+<div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white shadow-inner">
+<span class="material-symbols-outlined text-[48px]">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Content Body -->
+<div class="pt-14 pb-10 px-6 sm:px-12 flex flex-col items-center text-center">
+<!-- HeadlineText -->
+<h1 id="participantName" class="text-[#181112] dark:text-white tracking-tight text-[28px] sm:text-[32px] font-bold leading-tight pb-3">
+  Félicitations !
+</h1>
+<!-- TitleText -->
+<h2 class="text-gray-600 dark:text-gray-300 text-lg font-bold leading-snug tracking-[-0.015em] pb-6 max-w-sm">
+                Votre réservation de place a été effectuée avec succès.
+            </h2>
+<!-- Divider -->
+<div class="w-12 h-1 bg-gray-100 dark:bg-gray-800 rounded-full mb-6"></div>
+<!-- BodyText -->
+<p class="text-gray-500 dark:text-gray-400 text-base font-normal leading-relaxed pb-8">
+                Nous avons bien reçu vos informations d’inscription pour la conférence. Notre équipe vous contactera si des informations complémentaires sont nécessaires. Merci pour votre intérêt et votre participation.
+            </p>
+<!-- SingleButton (Discrete) -->
+<div class="flex w-full justify-center">
+<a href="index.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-[#f4f0f0] hover:bg-[#e8e4e4] dark:bg-gray-800 dark:hover:bg-gray-700 text-[#181112] dark:text-white text-sm font-bold leading-normal tracking-[0.015em] transition-all duration-200 group">
+<span class="material-symbols-outlined mr-2 text-lg text-gray-400 group-hover:text-primary transition-colors">arrow_back</span>
+<span class="truncate">Retour à l'accueil</span>
+</a>
+</div>
+<!-- Footer Note -->
+<div class="mt-8 flex items-center gap-2 text-xs text-gray-300 dark:text-gray-600 font-medium uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">confirmation_number</span>
+<span>Ref: CONF-Infra-BTP-2026-REG</span>
+</div>
+</div>
+</div>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const nom = params.get("nom");
+
+  if (nom) {
+    document.getElementById("participantName").textContent =
+      "Félicitations, " + nom + " !";
+  }
+</script>
+
+</body></html>
